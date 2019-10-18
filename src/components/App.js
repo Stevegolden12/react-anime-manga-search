@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import '../App.css';
 import SelectOption from './SelectOption'
 
@@ -147,6 +148,13 @@ class App extends React.Component {
   }
 }
 
+
+App.propTypes = {
+  getRequest: PropTypes.func,
+  showNoGenreAlert: PropTypes.func,
+  data: PropTypes.array,
+  errorDesc: PropTypes.string,
+}
 
 
 /*
